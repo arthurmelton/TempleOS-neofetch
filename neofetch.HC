@@ -35,15 +35,15 @@ I64 get_ram() {
 }
 
 U0 neofetch() {
-I64 uptime = time_to_string(tS);
-I64 uptime_empty = "";
-I64 i;
-for(i=0;i<17-StrLen(uptime);++i) uptime_empty = StrPrint(NULL,"%s ",uptime_empty);
-I64 core_empty = "";
-for(i=0;i<11-StrLen(mp_cnt);++i) core_empty = StrPrint(NULL,"%s ",core_empty);
-I64 mem = get_ram;
-I64 mem_empty = "";
-for(i=0;i<17-StrLen(mem);++i) mem_empty = StrPrint(NULL,"%s ", mem_empty);
+  I64 uptime = time_to_string(tS);
+  I64 uptime_empty = "";
+  I64 i;
+  for(i=0;i<17-StrLen(uptime);++i) uptime_empty = StrPrint(NULL,"%s ",uptime_empty);
+  I64 core_empty = "";
+  for(i=0;i<11-StrLen(mp_cnt);++i) core_empty = StrPrint(NULL,"%s ",core_empty);
+  I64 mem = get_ram;
+  I64 mem_empty = "";
+  for(i=0;i<17-StrLen(mem);++i) mem_empty = StrPrint(NULL,"%s ", mem_empty);
 "
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^;_,^^^^^^^^^^^r
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^;``:^^^^^^^^^^^^
